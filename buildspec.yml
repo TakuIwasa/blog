@@ -1,0 +1,3 @@
+commands:
+  - echo first
+  - echo $? # -> 0
