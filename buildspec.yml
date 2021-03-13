@@ -2,11 +2,11 @@ version: 0.2
 
 env:
   parameter-store:
-    HITOKOTOMONO-DB: HITOKOTOMONO-DB
-    HITOKOTOMONO-HOST: HITOKOTOMONO-HOST
+    AAA: AAA
+    CCC_DDD: CCC_DDD
 
 phases:
   build:
     commands:
-      - echo HITOKOTOMONO-DB:$HITOKOTOMONO-DB
-      - echo HITOKOTOMONO-HOST:$HITOKOTOMONO-HOST
+      - echo AAA:$AAA
+      - echo CCC_DDD:$CCC_DDD
