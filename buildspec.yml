@@ -1,7 +1,12 @@
 version: 0.2
 
+env:
+  parameter-store:
+    hitokotomono-db: 'HITOKOTOMONO-DB'
+    hitokotomono-host: 'HITOKOTOMONO-HOSt'
+
 phases:
   build:
     commands:
-      - echo first
-      - echo $? # -> 0
+      - echo hitokotomono-db: ${hitokotomono-db}
+      - echo hitokotomono-host: ${hitokotomono-host}
