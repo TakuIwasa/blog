@@ -1,3 +1,5 @@
-commands:
-  - echo first
-  - echo $? # -> 0
+phases:
+  build:
+    commands:
+      - echo first
+      - echo $? # -> 0
