@@ -3,7 +3,7 @@ version: 0.2
 env:
   parameter-store:
     hitokotomono-db: 'HITOKOTOMONO-DB'
-    hitokotomono-host: 'HITOKOTOMONO-HOSt'
+    hitokotomono-host: 'HITOKOTOMONO-HOST'
 
 phases:
   build:
