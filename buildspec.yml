@@ -8,5 +8,5 @@ env:
 phases:
   build:
     commands:
-      - echo db:$HITOKOTOMONO-DB
-      - echo host:$HITOKOTOMONO-HOST
+      - echo HITOKOTOMONO-DB:$HITOKOTOMONO-DB
+      - echo HITOKOTOMONO-HOST:$HITOKOTOMONO-HOST
