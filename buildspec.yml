@@ -2,11 +2,11 @@ version: 0.2
 
 env:
   parameter-store:
-    HITOKOTOMONO-DB: "HITOKOTOMONO-DB"
-    HITOKOTOMONO-HOST: "HITOKOTOMONO-HOST"
+    HITOKOTOMONO-DB: HITOKOTOMONO-DB
+    HITOKOTOMONO-HOST: HITOKOTOMONO-HOST
 
 phases:
   build:
     commands:
-      - echo db:${HITOKOTOMONO-DB}
-      - echo host:${HITOKOTOMONO-HOST}
+      - echo db:$HITOKOTOMONO-DB
+      - echo host:$HITOKOTOMONO-HOST
