@@ -1,4 +1,10 @@
+from .base import *
+
+DEBUG = False
+
 import environ
+
+ALLOWED_HOSTS = ['*']
 
 # settings.pyの位置を起点として３つ上の親ディレクトリを参照。
 BASE_DIR = environ.Path(__file__) - 3
