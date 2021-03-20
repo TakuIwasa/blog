@@ -4,7 +4,7 @@ DEBUG = False
 
 import environ
 
-ALLOWED_HOSTS = ['hitokotomono-db.cfadru8nyjdr.ap-northeast-1.rds.amazonaws.com']
+ALLOWED_HOSTS = ['LoadBalancerWeb-580883579.ap-northeast-1.elb.amazonaws.com']
 
 # settings.pyの位置を起点として３つ上の親ディレクトリを参照。
 BASE_DIR = environ.Path(__file__) - 3
