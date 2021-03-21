@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+.search {
+    float: right;
+    margin-bottom: 20px;
+}
+
+.article-list {
+    width: 1050px;
+    height: auto;
+}
+
+.article {
+    background-color: blueviolet;
+    float: left;
+    width: 320px;
+    height: 200px;
+    margin: 0 30px 20px 0;
+    position: relative;
+}
+
+.article .text {
+    padding: 2px;
+    background-color: #093C77;
+    position: absolute;
+    bottom: 0px;
+}
+
+.title {
+    color: #7e3311;
+    font: normal normal normal 48px/19px Lucida Sans;
+}
+
+
+.article-title {
+    margin-right: 2px;
+    color: white;
+    font-family: 'Lucida Sans';
+    font-size: 12px;
+}
+
+.article-text {
+    color: white;
+    font-family: 'Lucida Sans';
+    font-size: 12px;
+}
+
+.article-date {
+    color: greenyellow;
+    font-family: 'Lucida Sans';
+    font-size: 12px;
+    float: right;
+    display: block;
+    padding-bottom: 0px;
+    padding-top: 10px;
+}
