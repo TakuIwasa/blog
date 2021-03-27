@@ -1,21 +1,70 @@
 @charset "utf-8";
 
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+div#wrapper {
+    margin: 0 auto 0 auto;
+    width: 900px;
+}
+
+header {
+    width: 700px;
+    height: 150px;
+    float: right;
+    background-color: red;
+}
+
+div#container {
+    width: 900;
+    height: auto;
+    background-color: skyblue;
+}
+
+
+div#left_side {
+    float: left;
+    width: 200px;
+    height: auto;
+    background-color: yellow;
+}
+
+div#content {
+    width: 700px;
+    height: auto;
+    background-color: green;
+    float: right;
+}
+
+div#container {
+    float: right;
+}
+
+footer {
+    background-color: hotpink;
+}
+
 .search {
     float: right;
     margin-bottom: 20px;
 }
 
 .article-list {
-    width: 1050px;
+    width: 700px;
     height: auto;
 }
 
 .article {
     background-color: blueviolet;
     float: left;
-    width: 320px;
-    height: 200px;
-    margin: 0 30px 20px 0;
+    width: 210px;
+    height: 150px;
+    margin: 0px 10px 5px 10px;
     position: relative;
 }
 
@@ -42,7 +91,7 @@
 .article-text {
     color: white;
     font-family: 'Lucida Sans';
-    font-size: 12px;
+    font-size: 8px;
 }
 
 .article-date {
