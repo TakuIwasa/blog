@@ -1,23 +1,33 @@
 {% extends 'blog/base.html' %}
 
-{% block content %}
+{% block header %}
     <h1 class="title">Articles</h1>
+{% endblock %}
 
+<!--
+{% block left_side %}
     <form method="GET" action="{% url 'blog:index' %}">
         <input type="text" name="keyword"></input>
         <button type="submit">Search</button>
     </form>
+{% endblock %}
+-->
 
+{% block content %}
     <div class="article-list">
         {% for article in article_list %}
             <div class="article">
                 <div class="sumnale"></div>
                 <div class="text">
                     <span class="article-title">{{ article.title }}</span>
-                    <span class="article-text">{{ article.text | truncatechars:70 }}</span>
+                    <span class="article-text">{{ article.text | truncatechars:20 }}</span>
                     <span class="article-date">{{ article.date | date:"SHORT_DATE_FORMAT" }}</span>
                 </div>
             </div>
         {% endfor %}
     </div>
 {% endblock%}
+
+{% block footer %}
+    footer
+{% endblock %}

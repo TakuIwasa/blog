@@ -10,8 +10,48 @@
     <link rel="stylesheet" type="text/css" href="{% static "/blog/css/style.css" %}" media="all">
 </head>
 <body>
-    {% block content %}
-    {% endblock %}
+    <div id="wrapper">
+
+        <header>
+            {% block header %}
+            {% endblock %}
+        </header>
+
+        <div id="container">
+
+            <div id="left_side">
+                <!--
+                {% block left_side %}
+                {% endblock %}
+                -->
+                <form method="GET" action="{% url 'blog:index' %}">
+                    <input type="text" name="keyword"></input>
+                    <button type="submit">Search</button>
+                </form>
+
+                <li>home</li>
+                <li>articles</li>
+                <li>profile</li>
+                <li>contact</li>
+                <li>link</li>
+
+            </div>
+
+            <div id="content">
+                {% block content %}
+                {% endblock %}
+            </div>
+
+        </div>
+
+        <div class="clearfix"></div>
+
+        <footer>
+            {% block footer%}
+            {% endblock %}
+        </footer>
+
+    </div>
     
 </body>
 </html>
