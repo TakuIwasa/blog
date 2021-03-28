@@ -7,4 +7,4 @@ RUN pip install -r requirements.txt
 COPY . /code/
 
 # CMD ["python3", "manage.py", "runserver", "0.0.0.0:80", "--settings", "config.settings.production"]
-CMD ["gunicorn", "--bind", "0.0.0.0:80", "config.wsgi"]
+CMD ["gunicorn", "--bind", "0.0.0.0:80", "--capture-output", "config.wsgi"]
